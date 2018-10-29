@@ -9,7 +9,11 @@
         <div class="col-md-6 ml-auto mr-auto">
           <div class="profile">
             <div class="avatar">
-              <%= image_tag("faces/cuong.jpg", alt: "Circle Image", class: "img-raised rounded-circle img-fluid") %>
+              <% if @user.avatar? %>
+                <%= image_tag @user.avatar.url, alt: "Circle Image", class: "img-raised rounded-circle img-fluid" %>
+              <% else %>
+                <%= image_tag "faces/cuong.jpg", alt: "Circle Image", class: "img-raised rounded-circle img-fluid" %>
+              <% end %>
             </div>
             <div class="name">
               <h3 class="title"><%= t ".user_name" %></h3>
