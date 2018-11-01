@@ -1,6 +1,6 @@
 <h1><%= @speech.title %></h1>
 <div>
-  <%= t ".author" %><%= @speech.user.name %>
+  <%= t ".author" %><%= link_to @speech.user.name, @speech.user %>
 </div>
 <div>
   <%= t ".theme" %>

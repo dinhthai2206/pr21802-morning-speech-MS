@@ -130,6 +130,8 @@ GEM
     ffi (1.9.25)
     font-awesome-rails (4.7.0.4)
       railties (>= 3.2, < 6.0)
+    friendly_id (5.2.4)
+      activerecord (>= 4.0.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     haml (5.0.4)
@@ -382,6 +384,7 @@ DEPENDENCIES
   devise-i18n
   factory_bot_rails
   faker!
+  friendly_id (~> 5.2.0)
   jbuilder (~> 2.5)
   jquery-rails
   koala
